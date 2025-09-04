@@ -1,12 +1,36 @@
-# React + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<a href=""><img src="./src/assets/img/logo.png" width="300px"/></a>
+</div>
 
-Currently, two official plugins are available:
+acessar: [imc.com.br]()
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Sobre o projeto
+O **IMC** é uma aplicação desenvolvida em **React** que calcula o **Índice de Massa Corporal** de forma simples e rápida.  
+A ferramenta ajuda o usuário a descobrir se está dentro do peso ideal, abaixo ou acima, fornecendo uma classificação clara baseada nos valores oficiais da Organização Mundial da Saúde (OMS).
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Funcionalidades
+- Inserção de **peso (kg)** e **altura (m)**.  
+- Cálculo automático do **IMC**.  
+- Exibição da **classificação**:  
+  - Abaixo do peso  
+  - Peso normal  
+  - Sobrepeso  
+  - Obesidade (Grau 1, Mórbida)  
+- Interface simples, responsiva e intuitiva.
+
+---
+
+## Tecnologias utilizadas
+- React
+- HTML5  
+- CSS3  
+- JavaScript
+
+## Desenvolvedor 
+
+* Samuel Monteiro - 564391
+
+<p align="center">Checkpoint 1 - 2° Semestre | FIAP</p>
