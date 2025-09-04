@@ -1,36 +1,46 @@
 <div align="center">
-
-<a href="http://localhost:5173/"><img src="./src/assets/img/logo.png" width="300px"/></a>
+  <a href="https://cp-1-front-end-imc-orpin.vercel.app/">
+    <img src="./src/assets/img/logo.png" width="300px"/>
+  </a>
 </div>
 
-acessar: [imc.com.br](http://localhost:5173/)
+# Acesse o Projeto
 
-# Sobre o projeto
-O **IMC** é uma aplicação desenvolvida em **React** que calcula o **Índice de Massa Corporal** de forma simples e rápida.  
-A ferramenta ajuda o usuário a descobrir se está dentro do peso ideal, abaixo ou acima, fornecendo uma classificação clara baseada nos valores oficiais da Organização Mundial da Saúde (OMS).
+🔗 **[imc.com.br](https://cp-1-front-end-imc-orpin.vercel.app/)**
+
+---
+
+# Sobre o Projeto
+
+O **IMC** é uma aplicação desenvolvida em **React** que calcula o **Índice de Massa Corporal (IMC)** de forma simples e rápida.  
+A ferramenta permite ao usuário verificar se está dentro do peso ideal, abaixo ou acima, com base na classificação oficial da **Organização Mundial da Saúde (OMS)**.
 
 ---
 
 ## Funcionalidades
-- Inserção de **peso (kg)** e **altura (m)**.  
-- Cálculo automático do **IMC**.  
-- Exibição da **classificação**:  
-  - Abaixo do peso  
-  - Peso normal  
-  - Sobrepeso  
-  - Obesidade (Grau 1, Mórbida)  
-- Interface simples, responsiva e intuitiva.
+
+- 🏋️‍♂️ **Inserção de Peso (kg)** e **Altura (m)**.
+- 🔢 **Cálculo Automático do IMC**.
+- 📊 **Classificação do IMC**:
+  - Abaixo do Peso
+  - Peso Normal
+  - Sobrepeso
+  - Obesidade (Grau 1, Mórbida)
+- 🌐 Interface **Simples**, **Responsiva** e **Intuitiva**.
 
 ---
 
-## Tecnologias utilizadas
-- React
-- HTML5  
-- CSS3  
-- JavaScript
+## Tecnologias Utilizadas
 
-## Desenvolvedor 
+- ⚛️ **React**
+- 🌐 **HTML5**
+- 🎨 **CSS3**
+- 💻 **JavaScript**
 
-* Samuel Monteiro - 564391
+---
+
+## Desenvolvedor
+
+👨‍💻 **Samuel Monteiro** - 564391
 
 <p align="center">Checkpoint 1 - 2° Semestre | FIAP</p>
