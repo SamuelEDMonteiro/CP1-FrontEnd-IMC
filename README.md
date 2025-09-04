@@ -1,9 +1,9 @@
 <div align="center">
 
-<a href=""><img src="./src/assets/img/logo.png" width="300px"/></a>
+<a href="http://localhost:5173/"><img src="./src/assets/img/logo.png" width="300px"/></a>
 </div>
 
-acessar: [imc.com.br]()
+acessar: [imc.com.br](http://localhost:5173/)
 
 # Sobre o projeto
 O **IMC** é uma aplicação desenvolvida em **React** que calcula o **Índice de Massa Corporal** de forma simples e rápida.  
