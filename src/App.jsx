@@ -1,33 +1,69 @@
+import './css/style.css'
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Header from "./components/Header"
+import Resultado from "./components/Resultado";
+import Footer from "./components/Footer";
 
 function App() {
-  const [count, setCount] = useState(0)
+
+  // HOOK- useState - Manipula o estado da variável
+  const [altura, setAltura] = useState();
+  const [peso, setPeso] = useState();
+  const [resultado, setResultado] = useState();
+  const [mostrarResultado, setMostrarResultado] = useState(false);
+
+  //CRIANDO A FUNÇAO CALCULAR IMC
+  const calcularImc = (e) => {
+    e.preventDefault(); //evita o recarregamento da página
+    if (altura > 0 && peso > 0) {
+      const imc = peso / (altura * altura);
+      setResultado(imc.toFixed(2)); //arrendonda para 2 casas decimais
+      setMostrarResultado(true);
+    } else {
+      alert("Por favor digite valores valídos");
+      setMostrarResultado(false);
+    }
+  }
+
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <Header />
+      <div className="hero">
+        <div className="apresentacao">
+          <h1>Descubra se está no peso ideal!</h1>
+        </div>
+        <div className="cards">
+          <form>
+            <div className="box-height">
+              <label htmlFor="altura"><span>Sua altura:</span></label>
+              <input
+                type="number"
+                id="altura"
+                placeholder="Ex: 1,70m"
+                value={altura}
+                onChange={(e) => setAltura(parseFloat(e.target.value))}
+              />
+            </div>
+
+            <div className="box-width">
+              <label htmlFor="peso"><span>Seu peso:</span></label>
+              <input
+                type="number"
+                id="peso"
+                placeholder="Ex: 60Kg"
+                value={peso}
+                onChange={(e) => setPeso(parseFloat(e.target.value))}
+              />
+            </div>
+            <button onClick={calcularImc}>Calcular</button>
+          </form>
+        {mostrarResultado && (
+          <Resultado resultado={resultado} />
+        )}
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Footer/>
     </>
   )
 }
