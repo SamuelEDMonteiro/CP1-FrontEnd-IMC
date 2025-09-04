@@ -41,7 +41,7 @@ function App() {
               <input
                 type="number"
                 id="altura"
-                placeholder="Ex: 1,75m"
+                placeholder="Ex: 1,70m"
                 value={altura}
                 onChange={(e) => setAltura(parseFloat(e.target.value))}
               />
@@ -52,7 +52,7 @@ function App() {
               <input
                 type="number"
                 id="peso"
-                placeholder="Ex: 65Kg"
+                placeholder="Ex: 60Kg"
                 value={peso}
                 onChange={(e) => setPeso(parseFloat(e.target.value))}
               />
